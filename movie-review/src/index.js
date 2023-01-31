@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
-import App2 from './App2';
 import reportWebVitals from './reportWebVitals';
 import MovieList from './movieList';
 import './App.css';
+
 // import Navbar from './components/Navbar'
 // import GlobalStyle from "./styles/globalStyles";
 // ReactDOM.render(<h1>Hello</h1>, document.getElementById("root"))
