@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
+// import MovieList from './movieList';
 
 
 function App2() {
@@ -21,7 +22,8 @@ function App2() {
         }
 
         let {name, review} = inputData;
-        function changeHandle() {
+
+        function handleSubmit() {
             setInputArr([
                 ...inputArr, {
                     name,
@@ -32,9 +34,13 @@ function App2() {
             console.log(inputData)
             setInputData({name: "", review: ""})
         }
+
+
         let deleteHandle =(i)=>{
+            // make a copy of all the review
             let newDataArr=[...inputArr]
-            newDataArr.splice(i,i)
+
+            newDataArr.splice(i, 1)
             setInputArr(newDataArr)
         }
 
@@ -45,15 +51,15 @@ function App2() {
                 name='name'
                 value={inputData.name}
                 onChange={changeHandle}
-                placeHolder="Enter Name"/>
+                placeholder="Enter Name"/>
                <input
                type="text"
                name='review'
                value={inputData.review}
                onChange={changeHandle}
-               placeHolder="Review"/>
+               placeholder="Review"/>
 
-               <button onClick={changeHandle}>Enter
+               <button onClick={handleSubmit}>Enter
                </button><br/>
                <br/><br/>
 

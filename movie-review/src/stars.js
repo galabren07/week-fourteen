@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import './App.css'
-import App2 from "./App2";
 
-function Sar ({yellow}) {
+
+
+function Sar
+ ({yellow}) {
     return (
-        <svg className={yellow ? 'yellowStar' : ''} width="24" height="24" img src="https://www.bing.com/th?id=OIP.YObvJxVXFWvYTwDolWwb1wHaHD&pid=3.1&cb=&w=300&h=300&p=0"></svg>
+        <svg className={yellow ? 'yellowStar' : ''} width="24" height="24"  src="https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/1542681/4531/4008/m1/fpnw/wm1/star-18-.jpg?1470822121&s=8482c797df800829ac14686afab712d6"></svg>
     )
 }
 
